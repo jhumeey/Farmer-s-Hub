@@ -1,0 +1,20 @@
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
+const NavBar = () => (
+  <div className="navigation">
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="#home">Farmers Hub</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto" style={{ marginLeft: '72%' }}>
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#link">Partners</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  </div>
+);
+
+export default NavBar;
