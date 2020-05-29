@@ -1,4 +1,6 @@
-.navigation {
- width: 96%;
- padding: 2%;
+.navigation-link {
+  margin-top: 1.0rem;
+}
+.nav-link-container {
+  margin-left: 60%;
 }
