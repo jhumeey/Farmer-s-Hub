@@ -9,25 +9,22 @@ import Nav from 'react-bootstrap/Nav';
 const NavBar = () => (
   <div className="navigation">
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Farmers Hub</Navbar.Brand>
+      <a className="logo-brand" href="/">
+        Farmer's Hub
+      </a>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="nav-link-container">
-          <Nav.Link href="#home" className="navigation-link">
-            About Us
-          </Nav.Link>
-          <Nav.Link href="#link" className="navigation-link">
-            Services
-          </Nav.Link>
-          <Nav.Link href="#link" className="navigation-link">
-            Contact Us
-          </Nav.Link>
-          <Nav.Link href="#link" className="navigation-link">
-            Partnerships
-          </Nav.Link>
-          <Nav.Link href="/goggle.com">
-            <button className="primary button">Login</button>
-          </Nav.Link>
+          <a href="/">About Us</a>
+          <a href="/">Services</a>
+          <a href="/">Partnership</a>
+          <a href="/">Contact Us</a>
+          <button className="primary-btn btn nav-btn">
+            {' '}
+            <a href="/login" className="login-nav-link">
+              Login
+            </a>
+          </button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
